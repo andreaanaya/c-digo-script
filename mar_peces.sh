@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Definir los frames
+# Frames de la animación
 frames=(
 "
                          🌞                         ☁️   ☁️
@@ -16,7 +16,6 @@ frames=(
                    🏖️ 🏖️ 🏖️ 🏖️ 🏖️ 🏖️ 🏖️
                  ⛱️     🐚     ⛱️     🐚     🏖️
 "
-
 "
                          🌞                      ☁️      ☁️
 
@@ -26,12 +25,11 @@ frames=(
         ~    ~ ~    ~  ~   ~    ~  ~   ~  ~  ~
 
                           🐟
- 
+
 -------------------------------------------------
                    🏖️ 🏖️ 🏖️ 🏖️ 🏖️ 🏖️ 🏖️
                  ⛱️     🐚     ⛱️     🐚     🏖️
 "
-
 "
                          🌞                       ☁️  ☁️
 
@@ -48,7 +46,11 @@ frames=(
 "
 )
 
-# Animación en bucle
+# Animar en bucle
 while true; do
     for frame in "${frames[@]}"; do
-        cl
+        clear
+        echo "$frame"
+        sleep 0.6
+    done
+done
